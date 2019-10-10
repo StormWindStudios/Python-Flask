@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+
+    <h1>Discover Authors</h1>
+
+    {% for user in users %}
+
+        {% if not current_user.is_following(user) %}
+            {% include "_author.html" %}
+            <hr/>
+        {% endif %}
+    {% endfor %}
+
+    {% if prev_url %}
+        <p><a href="{{ prev_url }}">Previous</a></p>
+    {% endif %}
+
+    {% if next_url %}
+        <p><a href="{{ next_url }}">Next</a></p>
+    {% endif %}
+
+{% endblock %}
+
+    

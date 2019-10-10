@@ -1,0 +1,18 @@
+
+<table class="table table-hover">
+    <tr>
+        {% if "/user" not in request.path %}
+            <td width="100">
+                <img src="{{ post.author.avatar(60) }}"><br>
+                <small>
+                    <a href="{{ url_for('main.user', user_id=post.author.id) }}">{{ post.author.first_name }} {{ post.author.last_name }}</a>
+                </small>
+            </td>
+        {% endif %}
+        <td>
+            <p style="font-weight: bold;">{{ post.title }}</p>
+            <p><small>Published about {{ moment(post.timestamp).fromNow() }}</small></p>
+            <p>{{ post.body }}</p>
+        </td>
+    </tr>
+</table>

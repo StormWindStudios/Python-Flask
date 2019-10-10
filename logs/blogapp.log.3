@@ -1,0 +1,124 @@
+2019-07-11 18:49:00,760 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-11 18:50:27,034 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-11 18:50:35,053 ERROR: Exception on /index [GET] [in c:\users\user\zac\pythonflask\env\lib\site-packages\flask\app.py:1780]
+Traceback (most recent call last):
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\User\Zac\PythonFlask\app\routes.py", line 36, in index
+    raise Exception("An error form us")
+Exception: An error form us
+2019-07-12 10:47:24,499 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-12 10:47:54,795 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-12 10:48:53,904 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-12 11:07:40,284 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-12 11:07:44,449 ERROR: Exception on /index [GET] [in c:\users\user\zac\pythonflask\env\lib\site-packages\flask\app.py:1780]
+Traceback (most recent call last):
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\User\Zac\PythonFlask\app\routes.py", line 39, in index
+    posts=current_user.followed_posts
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\User\Zac\PythonFlask\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\User\Zac\PythonFlask\app\templates\base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\User\Zac\PythonFlask\app\templates\index.html", line 6, in block "content"
+    {% for post in posts %}
+TypeError: 'method' object is not iterable
+2019-07-12 11:07:47,980 ERROR: Exception on /index [GET] [in c:\users\user\zac\pythonflask\env\lib\site-packages\flask\app.py:1780]
+Traceback (most recent call last):
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\User\Zac\PythonFlask\app\routes.py", line 39, in index
+    posts=current_user.followed_posts
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\user\zac\pythonflask\env\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\User\Zac\PythonFlask\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\User\Zac\PythonFlask\app\templates\base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\User\Zac\PythonFlask\app\templates\index.html", line 6, in block "content"
+    {% for post in posts %}
+TypeError: 'method' object is not iterable
+2019-07-12 11:08:10,069 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-12 11:08:25,937 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-12 11:09:19,404 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-12 11:13:50,373 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-12 11:14:53,206 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-12 11:15:49,573 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-12 11:25:54,739 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-12 11:33:03,536 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-12 11:33:29,215 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-12 11:34:45,188 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-12 11:38:30,619 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-12 11:38:50,817 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-12 11:56:56,631 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-12 11:57:46,321 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-12 11:59:02,347 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-12 11:59:32,128 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-12 12:00:17,960 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-12 12:01:37,658 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-12 12:02:41,082 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-12 12:02:53,023 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-12 12:03:23,854 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-12 12:04:13,631 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-12 12:12:17,678 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-12 12:12:21,563 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
+2019-07-12 12:16:41,826 INFO: Blog app starting up [in C:\Users\User\Zac\PythonFlask\app\__init__.py:42]
